@@ -20,6 +20,10 @@ vim.pack.add({
 	"https://github.com/stevearc/conform.nvim",
 	"https://github.com/mfussenegger/nvim-lint",
 	"https://github.com/nvim-treesitter/nvim-treesitter",
+	"https://github.com/folke/trouble.nvim",
+	"https://github.com/folke/todo-comments.nvim",
+	"https://github.com/nvim-lualine/lualine.nvim",
+	"https://github.com/lewis6991/gitsigns.nvim",
 })
 
 -- Treesitter --
@@ -123,10 +127,13 @@ vim.lsp.config("lua_ls", {
 
 vim.lsp.enable("lua_ls")
 
+-- TODO: extract to own module --
 -- Telescope --
 require("telescope").setup({})
 
 local telescope = require("telescope.builtin")
+
+require("config.ide").setup()
 
 vim.keymap.set("n", "<leader>ff", telescope.find_files, {
 	desc = "Find files",
@@ -140,6 +147,7 @@ vim.keymap.set("n", "<leader>fb", telescope.buffers, {
 	desc = "Buffers",
 })
 
+-- TODO: extract to keymaps file --
 -- Splits --
 vim.keymap.set("n", "<leader>ss", ":split<CR>", {
 	desc = "Horizontal split",
@@ -178,5 +186,5 @@ vim.keymap.set("n", "<leader>fo", helpers.format_buffer, {
 
 vim.api.nvim_create_autocmd("BufWritePost", {
 	pattern = "*.lua",
-	callback = helpers.format_bjffer
+	callback = helpers.format_buffer
 })
