@@ -49,6 +49,27 @@ To update the plugins later:
 :lua vim.pack.update()
 ```
 
+## Plugins
+
+| Package | Used for |
+| --- | --- |
+| [plenary.nvim](https://github.com/nvim-lua/plenary.nvim) | Shared Lua utilities required by other plugins |
+| [telescope.nvim](https://github.com/nvim-telescope/telescope.nvim) | File, text, buffer, symbol, and LSP search |
+| [nvim-lspconfig](https://github.com/neovim/nvim-lspconfig) | Language server configurations |
+| [blink.cmp](https://github.com/saghen/blink.cmp) | Completion and signature help |
+| [blink.lib](https://github.com/saghen/blink.lib) | Native library used by Blink |
+| [conform.nvim](https://github.com/stevearc/conform.nvim) | Formatting PHP, Blade, and Lua files |
+| [nvim-lint](https://github.com/mfussenegger/nvim-lint) | Running PHPStan diagnostics |
+| [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter) | Syntax highlighting |
+| [trouble.nvim](https://github.com/folke/trouble.nvim) | Diagnostics and symbol lists |
+| [todo-comments.nvim](https://github.com/folke/todo-comments.nvim) | Highlighting and searching TODO comments |
+| [lualine.nvim](https://github.com/nvim-lualine/lualine.nvim) | Status line |
+| [gitsigns.nvim](https://github.com/lewis6991/gitsigns.nvim) | Git changes in the sign column |
+| [oil.nvim](https://github.com/stevearc/oil.nvim) | File browser |
+| [which-key.nvim](https://github.com/folke/which-key.nvim) | Available key mappings popup |
+| [mini.nvim](https://github.com/nvim-mini/mini.nvim) | Automatic pairs and surrounding text objects |
+| [multicursor.nvim](https://github.com/jake-stewart/multicursor.nvim) | Multiple cursor editing |
+
 ## PHP and Laravel projects
 
 Intelephense is used as the general PHP language server. `laravel-ls` is
