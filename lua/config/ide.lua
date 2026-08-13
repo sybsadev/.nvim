@@ -121,7 +121,7 @@ function M.setup()
 	-- Git signs --
 	require("gitsigns").setup({})
 
--- Нижняя строка
+	-- Нижняя строка --
 	require("lualine").setup({
 		options = {
 			theme = "auto",
