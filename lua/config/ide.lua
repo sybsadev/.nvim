@@ -27,10 +27,6 @@ function M.setup()
 		desc = "Go to defenition"
 	})
 
-	vim.keymap.set("n", "gr", telescope.lsp_references, {
-		desc = "Go to reference",
-	})
-
 	vim.keymap.set("n", "grr", telescope.lsp_references, {
 		desc = "Go to reference",
 	})
